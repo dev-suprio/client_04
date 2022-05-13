@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Wifi credentials for RFID reader</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Font-Awesome  -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="inner">
+				<form action="/get">
+					<a href="index.html"><img class="logo" src="images\logo.png" alt=""></a>
+					<label class="form-group">
+						<input type="text" name='ssid' class="form-control"  required>
+						<span>SSID:</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="password" name="password" class="form-control"  required>
+						<span for="">Password:</span>
+						<span class="border"></span>
+					</label>
+					<button>Submit 
+						<i class="fa fa-arrow-right" aria-hidden="true"></i>
+					</button>
+				</form>
+
+				<form action="/get">
+					<label class="form-group">
+						<input type="text" name='endpoint' class="form-control"  required>
+						<span>Endpoint:</span>
+						<span class="border"></span>
+					</label>
+					<button>Submit 
+						<i class="fa fa-arrow-right" aria-hidden="true"></i>
+					</button>
+				</form>
+
+				<form action="/get">
+					<label class="form-group">
+						<input type="text" name='token' class="form-control"  required>
+						<span>Token:</span>
+						<span class="border"></span>
+					</label>
+					<button>Submit 
+						<i class="fa fa-arrow-right" aria-hidden="true"></i>
+					</button>
+				</form>
+
+				<form action="/get">
+					<label class="form-group">
+						<input type="text" name='refreshTime' class="form-control"  required>
+						<span>Refresh Time:</span>
+						<span class="border"></span>
+					</label>
+					<button>Submit 
+						<i class="fa fa-arrow-right" aria-hidden="true"></i>
+					</button>
+				</form>
+
+				<form action="/get">
+					<label class="form-group">
+						<input type="text" name='deviceName' class="form-control"  required>
+						<span>Device Name:</span>
+						<span class="border"></span>
+					</label>
+					<button>Submit 
+						<i class="fa fa-arrow-right" aria-hidden="true"></i>
+					</button>
+				</form>
+
+				<form action="/get">
+					<label class="form-group">
+						<input type="text" name='ipAddr' class="form-control"  required>
+						<span>Fixed IP:</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="text" name='ipGateway' class="form-control"  required>
+						<span>Gateway IP:</span>
+						<span class="border"></span>
+					</label>
+					<label class="form-group">
+						<input type="text" name='subnet' class="form-control"  required>
+						<span>Subnet:</span>
+						<span class="border"></span>
+					</label>
+					<button>Submit 
+						<i class="fa fa-arrow-right" aria-hidden="true"></i>
+					</button>
+				</form>
+
+				<form method='get' action="/reboot">
+					<button>REBOOT 
+						<i class="fa fa-arrow-right" aria-hidden="true"></i>
+					</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
